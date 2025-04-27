@@ -1,0 +1,94 @@
+@import "reset.scss"
+%title-style
+    text-transform: capitalize
+*
+    box-sizing: border-box
+.container
+    margin: 0 auto
+    padding: 3rem 0
+.services
+    background-color: #faf9f6
+    padding: 0 3.1rem
+    &__logo
+        height: 50px
+        margin-bottom: 3.1rem
+    &__title
+        font-size: 4rem
+        font-weight: 700
+        margin-bottom: 3.75rem
+    &__items
+        display: flex
+        justify-content: space-between
+        margin-bottom: 3rem
+    &__item
+        display: flex
+        flex: 0 1 45%
+        justify-content: center
+        align-items: center
+        gap: 50px
+    &__item-img
+        max-width: 300px
+        height: 200px
+    &__item-title
+        font-size: 1.5rem
+        font-weight: 600
+        margin-bottom: 1.25rem
+        @extend %title-style
+    &__item-text
+        font-size: 1rem
+        font-weight: 400
+    &__footer-wrap
+        display: flex
+        justify-content: flex-end    
+    &__footer-text
+        font-size: 0.7rem        
+    &__title_color
+        color: midnightblue
+
+@media (max-width: 1300px)
+    .services
+        padding: 0 calc(20px + 5vw)
+        &__items
+            flex-direction: column
+            gap: 60px
+        &__item
+            gap: 70px
+        &__title
+            font-size: 3rem
+            text-align: center  
+
+@media (max-width: 680px)
+    .container
+        padding: 2rem 2rem
+    .services
+        padding: 0 calc(20px + 10vw)
+        &__items
+            flex-direction: column
+            gap: 50px
+            margin-bottom: 7rem
+        &__item
+            flex-direction: column
+@media (max-width: 600px)
+    .services
+        padding: 1rem
+        &__title
+            font-size: 2rem
+                       
+
+       
+                 
+           
+   
+         
+       
+                 
+        
+
+
+    
+
+
+
+  
+
+  
